@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <h1><a href="index.html" class="logo">DW</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="clase1.html" class="nav">Clase 1</a></li>
+                    <li><a href="clase2.html" class="nav">Clase 2</a></li>
+                    <li><a href="clase3.html" class="nav">Clase 3</a></li>
+                    <li><a href="clase4.html" class="nav">Clase 4</a></li>
+                    <li><a href="clase5.html" class="nav">Clase 5</a></li>
+                    <li><a href="clase6.html" class="nav">Clase 6</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="bienvenida">
+            <h1>Bienvenidos a la clase 4</h1>
+        </section>
+
+        <section id="formularios">
+            <h1>Formularios</h1>
+            
+            <form action="" id="nuevo-usuario">
+                <h2>Nuevo usuario</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required>
+                <span>Mensaje de estado</span>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="¿Cuál es tu apellido?">
+                <span>Mensaje de estado</span>
+
+                <label for="email">Email</label>
+                <input type="email" id= "email" placeholder="email@dominio.com" required>
+                <span>Mensaje de estado</span>
+
+                <label for="pass">Contraseña</label>
+                <input type="password" placeholder="Elige tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+                <label>
+                    ¿Te gustaría recibir novedades por e-mail?
+
+                    <input type="radio" name="newsletter" value="newsletter-si" checked> Si
+
+                    <input type="radio" name="newsletter" value="newsletter-no"> No
+                    
+                </label>
+
+                <button>Enviar</button>
+            </form>
+
+            <form action="" id="logIn">
+                <h2>Log in</h2>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Ingresa tu email" required>
+                <span>Mensaje de estado</span>
+
+                <label for="pass">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$" title="La contraseña debe tener al menos 10 caracteres, 1 mayúscula, 1 número y 1 símbolo (!@#$%^&*)" required>
+                <span>Mensaje de estado</span>
+
+                <button>Enviar</button>
+            </form>
+
+            <form action="" id="enviar-mensaje">
+                <form action="">
+                    <h2>Enviar mensaje</h2>
+                    
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required>
+                    <span>Mensaje de estado</span>
+
+                    <label for="asunto">Asunto</label>
+                    <select name="asunto" id="asunto">
+                        <option value="miPedido">Mi pedido</option>
+                        <option value="miSubscripción">Mi subscripción</option>
+                        <option value="misNovedades">Mis novedades</option>
+                        <option value="consulta">Otra consulta</option>
+                    </select>
+                    <span>Mensaje de estado</span>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <span>Mensaje de estado</span>
+
+                    <label for="">Acepto los términos y condiciones
+                        <input type="checkbox" value="acepto" required title="Acepto los términos y condiciones">
+                    </label>
+
+                    <button>Enviar</button>
+                </form>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <h1>Sobre nuestro curso:</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.educacionit.com/curso-de-html" target="_blank"  class="footer" >Programa</a>
+                    </li>
+                    <li>
+                        <a href="https://alumni.education/" target="_blank"  class="footer" >Alumni</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/SpRytRKP" target="_blank"  class="footer" >Discord</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

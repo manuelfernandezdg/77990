@@ -1,0 +1,354 @@
+/* Instalación de la tipografía Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Lista de colores para el sitio */
+.colores {
+    color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 15%);
+    color: hsl(208, 100%, 74%);
+    color: hsl(208, 100%, 94%);
+    color: hsl(286, 100%, 20%);
+    color: hsl(286, 100%, 65%);
+    color:hsl(286, 100%, 85%);
+}
+
+/* Estilos generales */
+/* Selector universal */
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: hsl(208, 100%, 94%);
+    color: hsl(208, 100%, 8%);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Estilos para el header */
+header {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 2rem;
+    /* Posición sticky */
+    position: sticky;
+    top: 0;
+}
+
+.contenedor-header {
+    width: min(65rem, 100%);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    gap: 2rem;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 2rem;
+    border-bottom: 0.1rem solid hsl(208, 100%, 8%);
+    width: min(65rem, 100%);
+    margin: 2rem auto;
+}
+
+section h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Estilos para el footer  */
+footer {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 1.2rem;
+
+    position: sticky;
+    bottom: 0px;
+}
+
+.contenedor-footer {
+    width: min(65rem, 100%);  
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 1rem;
+}
+
+a.footer:link,
+a.footer:visited {
+    text-decoration: none;
+    color: hsl(286, 100%, 65%);
+    font-size: 400;
+}
+
+a.footer:hover,
+a.footer:active {
+    color: hsl(286, 100%, 85%);
+}
+
+/* Ejemplo de modelo de caja */
+.modeloDeCaja {
+    border: 0.1rem solid hsl(208, 100%, 8%); /* grosor, estilo y color */
+    
+    /* ancho y alto */
+    width: 12rem;
+    height: 12rem;
+
+    padding: 2rem; /* 1rem = 16px */
+    margin: 2rem;
+}
+
+/* Ejemplo de trabajo con links y CSS */
+
+a.nav:link,
+a.nav:visited {
+    color: hsl(208, 100%, 94%);
+    text-decoration: none;
+    
+    
+    /* display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: red; */
+}
+
+a.nav:hover,
+a.nav:active {
+    color: hsl(286, 100%, 65%);
+}
+
+a.logo:link,
+a.logo:visited {
+    color: hsl(286, 100%, 65%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.logo:hover,
+a.logo:active {
+    color: hsl(286, 100%, 85%);
+}
+
+
+/* Imágenes */
+img {
+    width: min(65rem, 100%);
+}
+
+/* Clase 3 */
+#bienvenida {
+    min-height: 42rem;
+    padding: 0;
+    border: none;
+    background-image: url('../img/bienvenida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#bienvenida h1 {
+    background-color: hsla(208, 100%, 8%, 0.75);
+    color: hsl(208, 100%, 94%);
+    font-weight: 500;
+
+    margin: 0;
+    padding: 2rem 0;
+}
+
+/* Flexbox ejemplo */
+
+.contenedor {
+    min-height: 32rem;
+    background-color: hsl(208, 100%, 74%);
+    display: flex;
+    flex-direction: column; /* controla el eje principal */
+    justify-content: flex-end; /* aplica sobre el eje principal */
+    gap: 1rem; /* Asigna un valor para separar los elementos */ 
+    align-items: center; /* aplica sobre el eje secundario*/
+}
+
+.item {
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 1rem;
+
+    /* width: 8rem; */
+    /* height: 8rem; */
+    border-radius: 1rem; /* 100% */
+}
+
+
+/* Ejercicio novedades */
+#novedades .contenedor-novedades {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#novedades article img {
+    width: 100%;
+}
+
+#novedades article {
+    width: 12rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+#novedades h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#novedades h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#novedades .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 94%);
+    background-color: hsl(208, 100%, 8%);
+    border: 2px solid hsl(208, 100%, 8%);
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 15%);
+}
+
+a.btn-outline:link,
+a.btn-outline:visited {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 8%);
+    border: 2px solid hsl(208, 100%, 8%);
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 15%);
+}
+
+/* Clase 4 (repaso) y 5 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    width: min(24rem, 100%);
+    margin: 2rem auto 0;
+
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+input,
+button,
+textarea,
+select {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+form span {
+    font-weight: 600;
+    color: hsl(286, 100%, 20%);
+    font-size: 0.9rem;
+
+    align-self: flex-end;
+    visibility: visible; /* Visibilidad del elemento */
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+    /* outline: 0.2rem solid hsl(286, 100%, 65%);
+    outline-offset: 0.2rem; */
+
+    outline: none;
+
+    border: 0.1rem solid hsl(286, 100%, 65%);
+}
+
+textarea {
+    min-height: 9rem;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+}
+
+button:hover {
+    background-color: hsl(208, 100%, 15%);
+}
